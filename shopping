@@ -1,0 +1,11 @@
+try:
+    with open("shopping_list push -u origin main.txt", "x") as f:
+        f.write("Shopping List Manager\n")
+        f.write("Created 4/28/26\n")
+        f.write("item\n")
+        f.write("No item yet\n")
+        
+        print("Shopping list initialize")
+        
+except FileExistsError:
+    print("file Already Exist")
