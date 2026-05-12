@@ -9,3 +9,18 @@ try:
         
 except FileExistsError:
     print("file Already Exist")
+
+
+
+def shopping_manager():
+    file_name = "shopping_list.txt"
+
+    while True:
+        print("\n--- Shopping List Manager ---")
+        print("1. Initialize/Reset List (Student A)")
+        print("2. Add Items (Student B)")
+        print("3. View List & Count (Student C)")
+        print("4. Search & Delete (All Members)")
+        print("5. Exit")
+        
+        choice = input("Select an option: ")
