@@ -24,3 +24,12 @@ def shopping_manager():
         print("5. Exit")
         
         choice = input("Select an option: ")
+
+        if choice == '1':
+            with open(file_name, "w") as f:
+                f.write("ITEM | QUANTITY\n")
+            print("File initialized.")
+
+        elif choice == '2':
+            item = input("Enter item name: ")
+            qty = input("Enter quantity
